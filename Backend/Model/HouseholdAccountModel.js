@@ -7,7 +7,7 @@ const HouseholdSchema = new mongoose.Schema({
     },
     residenceType: {
         type: String,
-        enum: ["Residential", "Non-Residential"],     //give dropdownoptions
+        enum: ["Residential", "Non-Residential"],     //give dropdown options
         required: true
     },
     wastegenarationhabbit: {

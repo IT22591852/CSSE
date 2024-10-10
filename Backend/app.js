@@ -29,25 +29,3 @@ mongoose.connect("mongodb+srv://admin:DiiHZaELJTGkk6CE@atlascluster.3atuzvl.mong
 }).catch((err) => {
   console.log(err);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

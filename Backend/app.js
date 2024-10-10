@@ -7,6 +7,7 @@ const app = express();
 const HouseholdAccountRoute = require("./Routes/HouseholdAccountRoute");
 const BusinessAccountRoute = require("./Routes/BusinessAccountRoute");
 const AccountDetailsRoute = require("./Routes/AccountDetailsRoute");
+const WasteMonitoringRoute = require("./Routes/WasteMonitoringRoute");
 
 // middleware
 app.use(express.json());
@@ -16,6 +17,7 @@ app.use(cors());
 app.use("/household", HouseholdAccountRoute);
 app.use("/business", BusinessAccountRoute);
 app.use("/account", AccountDetailsRoute);
+app.use("/waste", WasteMonitoringRoute);
 
 // connect to MongoDB
 mongoose.connect("mongodb+srv://admin:DiiHZaELJTGkk6CE@atlascluster.3atuzvl.mongodb.net/", {

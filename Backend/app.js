@@ -4,6 +4,11 @@ const cors = require("cors");
 const app = express();
 
 // link routes
+const regularCollectionRoute = require("./Routes/RegularCollectionRoutes.js");
+
+
+
+
 
 
 // middleware
@@ -11,6 +16,16 @@ app.use(express.json());
 app.use(cors());
 
 // routes
+app.use("/regularcollection", regularCollectionRoute);
+
+
+
+
+
+
+
+
+
 
 
 // connect to MongoDB
@@ -18,7 +33,7 @@ mongoose.connect("mongodb+srv://admin:DiiHZaELJTGkk6CE@atlascluster.3atuzvl.mong
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(() => {
-  console.log("MongoDB connected");
+  console.log("MongoDB connected");``
   app.listen(4000, () => {
     console.log("Server is running on port 4000");
   });

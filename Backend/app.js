@@ -6,7 +6,8 @@ const app = express();
 // link routes
 const regularCollectionRoute = require("./Routes/RegularCollectionRoutes.js");
 const userRoute = require("./Routes/UserLoginRoutes.js");
-
+const driverRoute = require("./Routes/DriveLoginRoutes.js");
+const adminRoute = require("./Routes/AdminLoginRoutes.js");
 
 
 
@@ -16,10 +17,12 @@ const userRoute = require("./Routes/UserLoginRoutes.js");
 app.use(express.json());
 app.use(cors());
 
+
 // routes
 app.use("/regularcollection", regularCollectionRoute);
 app.use("/userlogin", userRoute);
-
+app.use("/driverlogin", driverRoute);
+app.use("/adminlogin", adminRoute);
 
 
 

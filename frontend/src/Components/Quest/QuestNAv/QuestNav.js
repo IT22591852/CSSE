@@ -1,7 +1,8 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 import './QuestNav.css';
-import Logo from './Images/bglogo.jpg';
+import Logo from '../Images/bglogo.jpg';
+
 
 function Nav() {
   
@@ -37,21 +38,7 @@ function Nav() {
       
       </div>
     </div>
-    <p className='weltxt'>Welcome To Eco-R <br/> Waste Management</p>
-    <div className='btn-group'>
-        <button
-          className="nav_btn_log"
-          onClick={() => (window.location.href = "/login")}
-        >
-          Login
-        </button>
-        <button
-          className="nav_btn_regi"
-          onClick={() => (window.location.href = "/userregister")}
-        >
-          Register
-        </button>
-        </div>
+   
   </div>
   );
 }

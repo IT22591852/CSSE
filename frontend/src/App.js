@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import React from 'react';
 import {Route,Routes} from 'react-router-dom';
-import QuestNav from './Components/Quest/QuestNAv/QuestNav';
+import QuestHome from './Components/Quest/GuestHome/GuestHome';
 import './App.css';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <React.Fragment>
         <Routes>
-          <Route path="/" element={<QuestNav/>}/>
+          <Route path="/" element={<QuestHome/>}/>
          
         </Routes>
       </React.Fragment>

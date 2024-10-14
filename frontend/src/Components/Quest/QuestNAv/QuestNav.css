@@ -105,4 +105,36 @@
     font-weight: bold;
     text-align: left;
     margin-left: 70px;
+    /* margin-top: -3px; */
+  }
+  .bgimgcontainer{
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 80px;
+  }
+
+  .des{
+    margin-left: 900px;
+    margin-top: -520px;
+  }
+
+  .des1{
+    text-align:unset;
+    font-size:x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    color: #00A86B;
+  }
+
+  .bgimg3{
+    width: 100px;
+    margin-left: 500px;
+    border-radius: 10px;
+  }
+
+  .bg-imgg3{
+    width: 400px;
+    height: 260px;
+    margin-left: 440px;
+    border-radius: 15px;
   }

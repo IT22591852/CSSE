@@ -5,6 +5,7 @@ const app = express();
 
 // link routes
 const regularCollectionRoute = require("./Routes/RegularCollectionRoutes.js");
+const userRoute = require("./Routes/UserLoginRoutes.js");
 
 
 
@@ -17,7 +18,7 @@ app.use(cors());
 
 // routes
 app.use("/regularcollection", regularCollectionRoute);
-
+app.use("/userlogin", userRoute);
 
 
 

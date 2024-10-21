@@ -8,6 +8,7 @@ import DriverLogin from "./Components/Driver/DriverLogin/DriverLogin";
 import AddDriver from "./Components/Admin/DiliveryManagement/Driver/AddDriver/AddDriver";
 import DriverDetails from "./Components/Admin/DiliveryManagement/Driver/DriverDetails/DriverDetails";
 import UpdateDriver from "./Components/Admin/DiliveryManagement/Driver/UpdateDriver/UpdateDriver";
+import DriverNotification from './Components/Driver/DriverNotification/RegularDriverNotification';
 //--Vehical
 import AddVehical from "./Components/Admin/DiliveryManagement/Vehical/AddVehical/AddVehical";
 import VehicalDetails from "./Components/Admin/DiliveryManagement/Vehical/VehicalDetails/VehicalDetails";
@@ -102,6 +103,7 @@ import Orderdetails from './Components/User/Specialorder/Orderdetails/Orders';
 import Updateorder from './Components/User/Specialorder/Updateorder/Updateorder';
 import AddPayment from './Components/User/Specialorder/PaymentProcess/AddPayment';
 import PaymentSuccess from './Components/User/Specialorder/PaymentProcess/Paymentsuccessful';
+
 // special collection request admin
 import SpecialOrderDis from './Components/Admin/Specialorder/Orderdetail/SpecialOrderdis';
 import DriverNot from './Components/Driver/Notifications/Notifications';
@@ -234,6 +236,7 @@ function App() {
           <Route path="/specialorderdisadmin" element={<SpecialOrderDis/>}/>
           <Route path="/drivernot" element={<DriverNot/>}/>
           <Route path="/specialcollectionpaymentdetails" element={<SpecialCollectionPaymentDetails/>}/>
+          
         </Routes>
       </React.Fragment>
     </div>

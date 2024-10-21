@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate} from "react-router-dom";
 import './Addorder.css';
 import axios from 'axios';
 import AfterNav from '../../Home/NavBar/AfterNav';
@@ -7,6 +8,7 @@ import Bin from './bin.png';
 import SpecialCollectionPayment from '../../SpecialCollection/SpecialCollectionPayment'; // Import the payment modal
 
 function Addorder() {
+  const navigate = useNavigate();
   const rate = 200;
   const [inputs, setInputs] = useState({
     contactname: "",
@@ -52,6 +54,7 @@ function Addorder() {
     e.preventDefault();
     sendRequest().then(() => {
       setShowPaymentModal(true); // Open the payment modal
+      navigate('/specialpayment')
     });
   };
 

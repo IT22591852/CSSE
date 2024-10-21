@@ -7,8 +7,8 @@ const specialorderSchema=new Schema({
         type:String,
         required:true
     },
-    contactnumber:{
-        type:Number,
+    typeofuser:{
+        type:String,
         required:true
     },
     contactemail:{
@@ -33,6 +33,18 @@ const specialorderSchema=new Schema({
         type: String,
         required: true
     },
+    totalweight:{
+        type:Number,
+        required:true
+    },
+    totalamount:{
+        type:Number,
+        required:true
+    },
+    status:{
+        type:String,
+        required:true
+    }
 })
 
 module.exports=mongoose.model(
